@@ -4,13 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: #fff;
+            text-align: center;
+        }
+        header {
+            padding: 50px;
+            background: rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        section {
+            padding: 40px;
+            max-width: 800px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+        footer {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.2);
+            font-size: 0.9em;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            color: #fff;
+            font-size: 1.5em;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #ffdd57;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Personal Website</h1>
-        <p>Hi, I'm [Your Name]. Learn more about me and try out my AI chatbot below.</p>
+        <h1>Welcome to Alexis Yelton's Personal Website</h1>
+        <p>Hi, Learn more about me and try out my AI chatbot below.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
     </header>
 
     <section>
@@ -22,29 +69,15 @@
     
     <df-messenger
       project-id="gen-ai-demo1-448218"
-      agent-id="66518ff0-1f62-488e-a599-53801327a35d"
+      agent-id=""
       language-code="en"
       max-query-length="-1">
       <df-messenger-chat-bubble chat-title="Coding AI assistant">
       </df-messenger-chat-bubble>
     </df-messenger>
 
-    <style>
-      df-messenger {
-        z-index: 999;
-        position: fixed;
-        --df-messenger-font-color: #000;
-        --df-messenger-font-family: Google Sans;
-        --df-messenger-chat-background: #f3f6fc;
-        --df-messenger-message-user-background: #d3e3fd;
-        --df-messenger-message-bot-background: #fff;
-        bottom: 16px;
-        right: 16px;
-      }
-    </style>
-
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; 2025 Alexis Yelton. All rights reserved.</p>
     </footer>
 </body>
 </html>
