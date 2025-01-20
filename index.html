@@ -40,7 +40,7 @@
             border-radius: 5px;
             color: #fff;
        }
-	.chat-container {
+       .chat-container {
             max-width: 800px;
             height: 500px;
             margin: 50px auto;
@@ -79,15 +79,21 @@
 
     <div class="chat-container">
         <df-messenger
-          project-id="cancer-research-rag-chatbot"
-          agent-id="1c2e592e-48ed-4623-be14-647654bbe547"
-          language-code="en"
-          max-query-length="-1">
+           project-id="cancer-research-rag-chatbot"
+           agent-id="1c2e592e-48ed-4623-be14-647654bbe547"
+           language-code="en"
+           max-query-length="-1">
         </df-messenger>
     </div>
-
     <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
-
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const messenger = document.querySelector("df-messenger");
+            messenger.setAttribute("expand", "true");  // Expands the chat window
+            messenger.setAttribute("chat-title", "Brain Research Assistant");
+            messenger.setAttribute("chat-icon", "");
+        });
+    </script>
 
     <footer>
         <p>&copy; 2025 Alexis Yelton. All rights reserved.</p>
