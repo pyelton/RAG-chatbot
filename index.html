@@ -33,35 +33,20 @@
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
         }
-        footer {
+        .about-text {
+            text-align: right;
+            direction: rtl;
             padding: 20px;
-            background: rgba(0, 0, 0, 0.2);
-            font-size: 0.9em;
-        }
-        .social-icons a {
-            margin: 0 10px;
-            color: #fff;
-            font-size: 1.5em;
-            transition: color 0.3s;
-        }
-        .social-icons a:hover {
-            color: #ffdd57;
-        }
-        df-messenger {
-            z-index: 999;
-            position: fixed;
-            bottom: 50px;
-            right: 16px;
-            --df-messenger-bot-message: #fff;
-            --df-messenger-font-size: 18px;
-            --df-messenger-icon-size: 80px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+            color: #000;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Alexis Yelton's Brain Medicine Website</h1>
-        <p>Hi, I'm Alexis Yelton. I think people typically say "I have been personally touched by brain disorders (dementia, cancer, epilepsy), but I prefer to say that my life was completely changed by them. I have been trying to find a way to help people, their friends, and family with these difficult diagnoses, and my background in AI meant that I was able to build an AI solution that can help people navigate brain disease. This chatbot has access to hundreds of research articles that can provide you information on these diseases, treatment, and ways to improve quality of life. I hope this is helpful to you.</p>
+        <h1>Welcome to My Personal Website</h1>
+        <p>Hi, I'm [Your Name]. Learn more about me and try out my AI chatbot below.</p>
         <div class="social-icons">
             <a href="#"><i class="fab fa-linkedin"></i></a>
             <a href="#"><i class="fab fa-github"></i></a>
@@ -69,17 +54,17 @@
         </div>
     </header>
     <section>
-    	    <img src="assets/Headshot_AI_enhanced.png" alt="My headshot" width="300">
-    	    <p>Alexis Yelton</p>
+        <img src="assets/Headshot_AI_enhanced.png" alt="My headshot" width="300">
+        <p>Alexis Yelton</p>
     </section>
 
     <section>
         <h2>About Me</h2>
-        <p>I am passionate about AI and helping people. Try out my brain disorder research chatbot below.</p>
+        <p class="about-text">I am passionate about AI and helping people. Try out my brain disorder research chatbot below.</p>
     </section>
 
     <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
-    
+
     <df-messenger
       project-id="cancer-research-rag-chatbot"
       agent-id="1c2e592e-48ed-4623-be14-647654bbe547"
