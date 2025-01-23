@@ -25,6 +25,15 @@
             font-size: 2.5em;
             margin: 0;
         }
+        #chat-container {
+            width: 80%;
+            max-width: 600px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
         section {
             padding: 40px;
             text-align: center;
@@ -56,6 +65,7 @@
    </style>
 </head>
 <body>
+
     <header>
         <h1>Welcome to the Brain Medicine Chatbot</h1>
         <p class="about-text">People typically say "I have been personally touched by dementia, cancer, or epilepsy", but I prefer to say that my life was completely changed by them. I have been trying to find a way to help people, their friends, and family with these difficult diagnoses, and my background in AI meant that I was able to build an AI solution that can help people navigate brain disorders. This chatbot has access to hundreds of research articles that can provide you information on these diseases, treatment, and ways to improve quality of life. I hope this is helpful to you.</p>
@@ -64,6 +74,14 @@
     	    <img src="assets/neuro-connection-illustration-5693514/brain-modified.png" alt="Brain illustration" width="1400" class="centered-image">
     	    <p>Image by <a href="/">Freeimages.com</a></p>
     </section>
+
+    <div id="chat-container">
+        <h2>Chat with Vertex AI</h2>
+        <iframe id="chat-frame" src="about:blank"></iframe>
+
+        <input type="text" id="user-input" placeholder="Type your message here...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
 
     <section>
         <h2>About Me</h2>
