@@ -77,16 +77,22 @@
 
     <div id="chat-container">
         <h2>Chat with Vertex AI</h2>
-        <iframe id="chat-frame" src="about:blank"></iframe>
-
-        <input type="text" id="user-input" placeholder="Type your message here...">
-        <button onclick="sendMessage()">Send</button>
+        <df-messenger
+           project-id="cancer-research-rag-chatbot"
+           agent-id="1c2e592e-48ed-4623-be14-647654bbe547"
+           language-code="en"
+           expand="true">
+        </df-messenger>
     </div>
 
-    <section>
-        <h2>About Me</h2>
-        <p>I am passionate about AI and helping people. Try out my brain disorder research chatbot below.</p>
-    </section>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const messenger = document.querySelector("df-messenger");
+            messenger.setAttribute("chat-title", "Brain Research Assistant");
+            messenger.setAttribute("chat-icon", "");
+        });
+    </script>
 
     <div class="chat-container">
         <df-messenger
